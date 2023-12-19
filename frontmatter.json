@@ -7,41 +7,39 @@
       "previewPath": null,
       "fields": [
         {
-          "title": "Title",
+          "title": "layout",
+          "name": "layout",
+          "type": "string"
+        },
+        {
+          "title": "title",
           "name": "title",
           "type": "string"
         },
         {
-          "title": "Description",
-          "name": "description",
+          "title": "author",
+          "name": "author",
           "type": "string"
         },
         {
-          "title": "Publishing date",
-          "name": "date",
-          "type": "datetime",
-          "default": "{{now}}",
-          "isPublishDate": true
+          "title": "categories",
+          "name": "categories",
+          "type": "categories"
         },
         {
-          "title": "Content preview",
-          "name": "preview",
+          "title": "image",
+          "name": "image",
           "type": "image"
         },
         {
-          "title": "Is in draft",
-          "name": "draft",
-          "type": "draft"
+          "title": "featured",
+          "name": "featured",
+          "type": "boolean"
         },
         {
-          "title": "Tags",
-          "name": "tags",
-          "type": "tags"
-        },
-        {
-          "title": "Categories",
-          "name": "categories",
-          "type": "categories"
+          "title": "hidden",
+          "name": "hidden",
+          "type": "boolean"
         }
       ]
     }
@@ -54,5 +52,6 @@
       "title": "posts",
       "path": "[[workspace]]/_posts"
     }
-  ]
+  ],
+  "frontMatter.dashboard.openOnStart": true
 }
